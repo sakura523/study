@@ -1,0 +1,47 @@
+body { background:#f3f3f3; }
+
+.wrap {
+  clear: both;
+}
+
+.wrap .left {
+  width: 200px;
+  height:  200px;
+  background-color: red;
+}
+
+.wrap .center {
+  width: 200px;
+  height:  200px;
+  background-color: green;
+}
+
+.wrap .right {
+  width: 200px;
+  height:  200px;
+  background-color: blue;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#test-float {}
+#test-float .left { float: left;}
+#test-float .right { float: left;}
+#test-float .center { float: left; }
+
+#test-lnline-block {}
+#test-inline-block .wrap {font-size:0; }
+#test-inline-block .wrap div {
+  display: inline-block;
+  font-size:12px;
+}
+
+#test-flex-box {}
+#test-flex-box .wrap {
+  display: flex;
+}
+
