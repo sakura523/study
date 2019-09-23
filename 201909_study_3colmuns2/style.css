@@ -35,4 +35,22 @@ body {background: #ffffff; }
   width: inherit;
 }
 
+#flexbox .wrap {
+  display: flex;
+  height: 200px;
+}
 
+.flexbox {
+  flex-grow: 1;
+}
+.flexbox.left {
+  background: red;
+  flex-basis: 50px;
+  flex-grow: unset;
+}
+.flexbox.center {
+  background: green;
+}
+.flexbox.right {
+  background: blue;
+}
