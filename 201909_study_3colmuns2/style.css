@@ -1,0 +1,38 @@
+body {background: #ffffff; }
+
+.clearfix::after { /* 擬似クラス */
+  clear: both;
+  content: "";
+  display: block;
+}
+.float {
+  float: left;
+  width: 33.3%;
+  height: 200px;
+}
+.float.left {
+  background: red;
+}
+.float.center {
+  background: green;
+}
+.float.right {
+  background: blue;
+}
+
+#test-inline-block .wrap {
+  font-size: 0;
+}
+#test-inline-block .wrap .inline-block {
+  display: inline-block;
+  width: 33.3%;
+  font-size: 12px;
+}
+#test-inline-block .wrap .inline-block div {
+  width: 100%;
+}
+#test-inline-block .wrap .inline-block div img {
+  width: inherit;
+}
+
+
