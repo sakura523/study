@@ -1,0 +1,69 @@
+body {
+  background: #ffffff;
+}
+
+.clearfix::after {
+  /* 擬似クラス */
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.float {
+  float: left;
+  width: 33.3%;
+  height: 200px;
+
+  &.left {
+    background: red;
+  }
+
+  &.center {
+    background: green;
+  }
+
+  &.right {
+    background: blue;
+  }
+}
+
+#test-inline-block .wrap {
+  font-size: 0;
+
+  .inline-block {
+    display: inline-block;
+    width: 33.3%;
+    font-size: 12px;
+
+    div {
+      width: 100%;
+
+      img {
+        width: inherit;
+      }
+    }
+  }
+}
+
+#flexbox .wrap {
+  display: flex;
+  height: 200px;
+}
+
+.flexbox {
+  flex-grow: 1;
+
+  &.left {
+    background: red;
+    flex-basis: 50px;
+    flex-grow: unset;
+  }
+
+  &.center {
+    background: green;
+  }
+
+  &.right {
+    background: blue;
+  }
+}
