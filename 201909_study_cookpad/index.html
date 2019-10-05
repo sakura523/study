@@ -8,55 +8,94 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="container">
-    <header id="header">
-      <div class="header__wrap">
-        <div class="header__wrap__service">
-          <div class="header__wrap__service__menu">
+  <div class="container">
+    <div class="header">
+      <div class="header__sub">
+        <div class="header__inner">
+          <div class="header__service">
             <a href="https://cookpad.com/sitemap">サービス一覧</a>
           </div>
-          <div class="header__wrap__member-menu">
-            <ul>
-              <li>
-                <a href="https://cookpad.com/premium_service/campaign/million_users" class="header__wrap__service__right__premium">プレミアムサービス</a>
+          <div class="header__memberMenu">
+            <ul class="memberList">
+              <li class="memberList__item">
+                <a class="memberList__item--text-orange" href="https://cookpad.com/premium_service/campaign/million_users">プレミアムサービス</a>
               </li>
-              <li>
+              <li class="memberList__item">
                 <a href="https://cookpad.com/identity/email_registrations/new?navigator_name=cookpad&navigator_parameters%5Burl%5D=%2F">ユーザー登録(無料)</a>
               </li>
-              <li>
+              <li class="memberList__item">
                 <a href="https://cookpad.com/identity/session/new?navigator_name=cookpad&navigator_parameters%5Burl%5D=%2F">ログイン</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="header__wrap__main">
-          <a  class="header__wrap__main__logo" href="http://localhost/201909_study_cookpad/">
-            <img src="logo" alt="cookpad">
-          </a>
-          <p>361万</p>
-          <p>レシピ</p>
-          <div class="header__wrap__main__search">
-            <form id="top__search">
-              <input autocomplete="off" name="kw" class="watarmark__header__search" type="text" id="kw" placeholder="料理名・食材名">
-            </form>
-            <img src="//jp.rakuten-static.com/recipe/d-pc/btn_headerSearch.png" id="header_search_kw" alt="レシピ検索" class="imgover" hsrc="//jp.rakuten-static.com/recipe/d-pc/btn_headerSearch_on.png">
-            <p>栗　栗ごはん　豚キムチ　から揚げ　渋皮煮</p>
-            <i class="fas fa-chevron-circle-right"　alt="その他"></i>
+      </div>
+      <div class="header__main">
+        <div class="header__inner">
+          <div class="header__logo">
+            <h1>
+              <a href="#">
+                <img src="images/logo_header@2x.png" alt="cookpadロゴ">
+                <p class="header__count">
+                  <span class="header__count--large">317</span>
+                  <span>万</span>
+                  <span>レシピ</span>
+                </p>
+              </a>
+            </h1>
           </div>
-        </div>
-        <div class="header__wrap__main__myfolder">
-            <i class="fas fa-folder"　alt="フォルダアイコン"></i>
-          <p>Myフォルダ</p>
-        </div>
-        <div class="header__wrap__main__recipe">
-          <i class="fas fa-pen-square"　alt="レシピアイコン"></i>
-          <p>レシピを書く</p>
+          <div class="header__search">
+            <div class="search__top">
+              <form class="searchForm">
+                <input type="text" id="" placeholder="料理名・食材名">
+                <input type="submit" value="レシピ検索">
+              </form>
+            </div>
+            <div class="search__trend">
+              <ul class="trendList">
+                <li class="trendList__item">
+                  <a href="#">栗</a>
+                </li>
+                <li class="trendList__item">
+                  <a href="#">しょうが焼き</a>
+                </li>
+                <li class="trendList__item">
+                  <a href="#">渋皮煮</a>
+                </li>
+                <li class="trendList__item">
+                  <a href="#">れんこん</a>
+                </li>
+                <li class="trendList__item">
+                  <a href="#">ハロウィン</a>
+                </li>
+                <li class="trendList__item">
+                  <a href="#">
+                    <img src="images/trend_keyword_list_arrow.png" alt="もっとみるアイコン">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__userContent">
+              <ul class="myfolder">
+                <li class="myfolder__item">
+                  <a href="#" class="myfolder__item--folder">
+                    <img src="images/icon_service_menu_myfolder@2x.png" alt="フォルダアイコン">
+                    <span class="myfolder__item--folderText">MYフォルダ</span>
+                  </a>
+                </li>
+                <li class="myfolder__item">
+                  <a href="#"　class="myfolder__item--recipe">
+                    <img src="images/icon_service_menu_post_recipe@2x.png" alt="記入アイコン">
+                    <span class="myfolder__item--recipeText">レシピを書く</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
         </div>
       </div>
-    </header>
-    <div id="container"></div>
-    <div id="sub-menu"></div>
-    <div id="footer"></div>
-  </div>
+    </div>
+      <div class="container"></div>
+      <div class="sub-menu"></div>
+      <div class="footer"></div>
 </body>
 </html>
