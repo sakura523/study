@@ -1,0 +1,175 @@
+@mixin fontsize($size: 24, $base: 14) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+
+html {
+  font-size: 14px;
+  font-family: -apple-system, "Roboto", "Helvetica Neue", "Droid Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Meiryo", "メイリオ", "Osaka", "MS PGothic", arial, sans-serif;
+  background: #f7f3e8;
+}
+
+body {
+  line-height: 1.5;
+  color: #3c3c3c;
+}
+
+a {
+  color: #401c00;
+  text-decoration: none;
+
+  &:visited {
+    color: #a27652;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.header {
+  width: 100%;
+
+  &__sub {
+    background-color: white;
+    border-bottom: 1px #cac2ab solid;
+    padding: 8px 0;
+  }
+
+  &__inner {
+    width: 970px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .memberList {
+    display: flex;
+
+    &__item {
+      padding-left: 10px;
+
+      &__item--visited {
+        &:visited {
+          color: #401c00;
+        }
+      }
+
+      &__item--text-premium {
+        color: #F3983E;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__main {
+    padding: 8px 0;
+  }
+
+  &__logo {
+    width: 280px;
+    position: relative;
+  }
+
+  &__count {
+    position: absolute;
+    color: #F3983E;
+    font-weight: bold;
+    top: 23%;
+    left: 81%;
+    @include fontsize(12);
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: -0.1rem;
+
+    &--large {
+      @include fontsize(18);
+    }
+  }
+
+  .search {
+
+    &__form {
+      &--text {
+        background-image: url(images/icon_header_search.png);
+        background-repeat: no-repeat;
+        padding: 6px 0 6px 25px;
+        background-position: 3px center;
+        width: 250px;
+        outline: none;
+        border-radius: 3px;
+        border: #401c00 1px solid;
+      }
+
+      &--submit {
+        padding: 3px 5px;
+        outline: none;
+        @include fontsize(13);
+        border-radius: 3px;
+        background: linear-gradient(rgb(255, 255, 255), rgb(224, 224, 224));
+        border: rgb(83, 83, 83) 1px solid;
+      }
+    }
+
+    &__trend {
+      color: #401c00;
+      padding-top: 5px;
+    }
+  }
+
+  .trendList {
+    display: flex;
+    @include fontsize(11);
+
+    &__item {
+      margin-right: 8px;
+
+    }
+  }
+
+  .userContent {
+    display: flex;
+
+    .myfolder {
+      &__item {
+        &--folder {
+          display: block;
+          img {
+            width: 36px;
+          }
+        }
+        &--folderText {
+          line-height: 36px;
+        }
+      }
+
+    }
+
+    .myRecipe {
+      img {
+        width: 20px;
+      }
+
+      &__recipeButton {
+        margin-left: 20px;
+        display: block;
+        background-image: url(images/icon_service_menu_post_recipe@2x.png);
+        background-repeat: no-repeat;
+        color: aliceblue;
+        padding: 6px 7px 6px 12px;
+        background-position: 3px center;
+        @include fontsize(14);
+        border-radius: 3px;
+        background: linear-gradient(rgb(172, 200, 84), rgb(143, 168, 54));
+        border: rgb(189, 231, 136) 1px solid;
+        outline: nonel;
+        font-weight: bold;
+        &--text {
+          line-height: 20px;
+        }
+      }
+    }
+
+  }
+}

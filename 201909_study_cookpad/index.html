@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <title>Document</title>
 </head>
@@ -18,13 +20,13 @@
           <div class="header__memberMenu">
             <ul class="memberList">
               <li class="memberList__item">
-                <a class="memberList__item--text-orange" href="https://cookpad.com/premium_service/campaign/million_users">プレミアムサービス</a>
+                <a class="memberList__item--text-premium" href="https://cookpad.com/premium_service/campaign/million_users">プレミアムサービス</a>
               </li>
               <li class="memberList__item">
-                <a href="https://cookpad.com/identity/email_registrations/new?navigator_name=cookpad&navigator_parameters%5Burl%5D=%2F">ユーザー登録(無料)</a>
+                <a class="memberList__item--visited" href="https://cookpad.com/identity/email_registrations/new?navigator_name=cookpad&navigator_parameters%5Burl%5D=%2F">ユーザー登録(無料)</a>
               </li>
               <li class="memberList__item">
-                <a href="https://cookpad.com/identity/session/new?navigator_name=cookpad&navigator_parameters%5Burl%5D=%2F">ログイン</a>
+                <a class="memberList__item--visited" href="https://cookpad.com/identity/session/new?navigator_name=cookpad&navigator_parameters%5Burl%5D=%2F">ログイン</a>
               </li>
             </ul>
           </div>
@@ -38,17 +40,17 @@
                 <img src="images/logo_header@2x.png" alt="cookpadロゴ">
                 <p class="header__count">
                   <span class="header__count--large">317</span>
-                  <span>万</span>
+                  <span>万</span><br>
                   <span>レシピ</span>
                 </p>
               </a>
             </h1>
           </div>
-          <div class="header__search">
+          <div class="header__search search">
             <div class="search__top">
-              <form class="searchForm">
-                <input type="text" id="" placeholder="料理名・食材名">
-                <input type="submit" value="レシピ検索">
+              <form class="search__form">
+                <input class="search__form--text" type="text" id="" placeholder="料理名・食材名">
+                <input class="search__form--submit" type="submit" value="レシピ検索">
               </form>
             </div>
             <div class="search__trend">
@@ -75,26 +77,33 @@
                 </li>
               </ul>
             </div>
-            <div class="header__userContent">
-              <ul class="myfolder">
-                <li class="myfolder__item">
-                  <a href="#" class="myfolder__item--folder">
-                    <img src="images/icon_service_menu_myfolder@2x.png" alt="フォルダアイコン">
-                    <span class="myfolder__item--folderText">MYフォルダ</span>
-                  </a>
-                </li>
-                <li class="myfolder__item">
-                  <a href="#"　class="myfolder__item--recipe">
-                    <img src="images/icon_service_menu_post_recipe@2x.png" alt="記入アイコン">
-                    <span class="myfolder__item--recipeText">レシピを書く</span>
-                  </a>
-                </li>
-              </ul>
+          </div>
+          <div class="header__userContent userContent">
+            <div class="myfolder">
+              <div class="myfolder__item">
+                <a href="#" class="myfolder__item--folder">
+                  <img src="images/icon_service_menu_myfolder@2x.png" alt="フォルダアイコン">
+                  <span class="myfolder__item--folderText">MYフォルダ</span>
+                </a>
+              </div>
             </div>
+            <div class="myRecipe">
+              <a href="#" class="myRecipe__recipeButton">
+                <img src="images/icon_service_menu_post_recipe@2x.png"  alt="記入アイコン">
+                <span class="myRecipe__recipeButton--text">レシピを書く</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-      <div class="container"></div>
+      <div class="container">
+        <div class="main">
+          <div class="subContent">
+          </div>
+          <div class="mainContent">
+          </div>
+        </div>
+      </div>
       <div class="sub-menu"></div>
       <div class="footer"></div>
 </body>
