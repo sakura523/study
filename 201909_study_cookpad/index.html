@@ -4,103 +4,214 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
-  <div id="container">
-    <header id="header" class="header">
-      <div class="header__top">
+  <div class="container">
+    <header class="header">
+      <div class="header__sub">
         <div class="header__inner">
           <div class="header__service">
             <a href="https://cookpad.com/sitemap">サービス一覧</a>
           </div>
-          <div class="header__member-menu">
-            <ul class="member-list">
-              <li class="member-list__item">
-                <a class="member-list__item--text-orange" href="https://cookpad.com/premium_service/campaign/million_users">プレミアムサービス</a>
+          <div class="header__memberMenu">
+            <ul class="memberList">
+              <li class="memberList__item">
+                <a class="memberList__item--text-premium" href="https://cookpad.com/premium_service/campaign/million_users">プレミアムサービス</a>
               </li>
-              <li class="member-list__item">
-                <a href="https://cookpad.com/identity/email_registrations/new?navigator_name=cookpad&navigator_parameters%5Burl%5D=%2F">ユーザー登録(無料)</a>
+              <li class="memberList__item">
+                <a class="memberList__item--visited" href="https://cookpad.com/identity/email_registrations/new?navigator_name=cookpad&navigator_parameters%5Burl%5D=%2F">ユーザー登録(無料)</a>
               </li>
-              <li class="member-list__item">
-                <a href="https://cookpad.com/identity/session/new?navigator_name=cookpad&navigator_parameters%5Burl%5D=%2F">ログイン</a>
+              <li class="memberList__item">
+                <a class="memberList__item--visited" href="https://cookpad.com/identity/session/new?navigator_name=cookpad&navigator_parameters%5Burl%5D=%2F">ログイン</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="header__bottom">
+      <div class="header__main">
         <div class="header__inner">
-          <div class="header__bottom-left">
-            <div class="header__logo">
-              <h1 class="header__title">
-                <a href="#">
-                  <img src="images/logo_header@2x.png" alt="cookpadロゴ">
-                  <p class="header__count">
-                    <span class="header__count--large">317</span>
-                    <span class="header__count--small">万</span><br />
-                    <span class="header__count--small">レシピ</span>
-                  </p>
-                </a>
-              </h1>
-            </div>
+          <div class="header__logo">
+            <h1>
+              <a href="#">
+                <img src="images/logo_header@2x.png" alt="cookpadロゴ">
+                <p class="header__count">
+                  <span class="header__count--large">317</span>
+                  <span>万</span><br>
+                  <span>レシピ</span>
+                </p>
+              </a>
+            </h1>
           </div>
-          <div class="header__right">
-            <div class="header__search">
-              <div class="search__top">
-                <form id="search-form">
-                  <input type="text" id="" placeholder="料理名・食材名">
-                  <input type="submit" value="レシピ検索">
-                </form>
-              </div>
-              <div class="search__bottom">
-                <ul class="trend-list">
-                  <li class="trend-list__item">
-                    <a href="#">栗</a>
-                  </li>
-                  <li class="trend-list__item">
-                    <a href="#">しょうが焼き</a>
-                  </li>
-                  <li class="trend-list__item">
-                    <a href="#">渋皮煮</a>
-                  </li>
-                  <li class="trend-list__item">
-                    <a href="#">れんこん</a>
-                  </li>
-                  <li class="trend-list__item">
-                    <a href="#">ハロウィン</a>
-                  </li>
-                  <li class="trend-list__item">
-                    <a href="#">
-                      <img src="images/trend_keyword_list_arrow.png" alt="もっとみるアイコン">
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          <div class="header__search search">
+            <div class="search__top">
+              <form class="search__form">
+                <input class="search__form--text" type="text" id="" placeholder="料理名・食材名">
+                <input class="search__form--submit" type="submit" value="レシピ検索">
+              </form>
             </div>
-            <div class="header__user-content">
-              <ul class="myfolder">
-                <li class="myfolder__item">
-                  <a href="#" class="myfolder__item--folder">
-                    <img src="images/icon_service_menu_myfolder@2x.png" alt="フォルダアイコン">
-                    <span class="myfolder__item--folder-text">MYフォルダ</span>
-                  </a>
+            <div class="search__trend">
+              <ul class="trendList">
+                <li class="trendList__item">
+                  <a href="#">栗</a>
                 </li>
-                <li class="myfolder__item">
-                  <a href="#"　class="myfolder__item--recipe">
-                    <img src="images/icon_service_menu_post_recipe@2x.png" alt="記入アイコン">
-                    <span class="myfolder__item--recipe-text">レシピを書く</span>
+                <li class="trendList__item">
+                  <a href="#">しょうが焼き</a>
+                </li>
+                <li class="trendList__item">
+                  <a href="#">渋皮煮</a>
+                </li>
+                <li class="trendList__item">
+                  <a href="#">れんこん</a>
+                </li>
+                <li class="trendList__item">
+                  <a href="#">ハロウィン</a>
+                </li>
+                <li class="trendList__item">
+                  <a href="#">
+                    <img src="images/trend_keyword_list_arrow.png" alt="もっとみるアイコン">
                   </a>
                 </li>
               </ul>
             </div>
           </div>
+          <div class="header__userContent userContent">
+            <div class="myfolder">
+              <div class="myfolder__item">
+                <a href="#" class="myfolder__item--folder">
+                  <img src="images/icon_service_menu_myfolder@2x.png" alt="フォルダアイコン">
+                  <span class="myfolder__item--folderText">MYフォルダ</span>
+                </a>
+              </div>
+            </div>
+            <div class="myRecipe">
+              <a href="#" class="myRecipe__recipeButton">
+                <img src="images/icon_service_menu_post_recipe@2x.png"  alt="記入アイコン">
+                <span class="myRecipe__recipeButton--text">レシピを書く</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main">
+          <div class="subContent">
+          </div>
+          <div class="mainContent">
+          </div>
         </div>
       </div>
     </header>
-      <div id="container"></div>
-      <div id="sub-menu"></div>
-      <div id="footer"></div>
+    <div class="contant">
+      <main class="main">
+        <div class="main__inner">
+          <div class="main__serviceMnue">
+            <p class="subTitle">
+              <a href="#">レシピ関連サービス</a>
+            </p>
+            <ul class="serviceList">
+              <li class="serviceList__item">
+                <a href="#" class="serviceList__link">みんなのレシピ</a>
+              </li>
+              <li class="serviceList__item">
+                <a href="#" class="serviceList__link">プロのレシピ</a>
+              </li>
+              <li class="serviceList__item">
+                <a href="#" class="serviceList__link">献立</a>
+              </li>
+              <li class="serviceList__item">
+                <a href="#" class="serviceList__link">料理動画</a>
+              </li>
+              <li class="serviceList__item">
+                <a href="#" class="serviceList__link">話題のキッチン</a>
+              </li>
+            </ul>
+            <p class="subTitle">
+              <img class="subTitle__img" src="images/icon_ps_medium@2x.png" alt="プレミアムサービスアイコン">
+              <a href="#">プレミアムサービス</a>
+            </p>
+            <ul class="serviceList">
+              <li class="serviceList__item">
+                <a href="#" class="serviceList__link">人気順検索</a>
+              </li>
+              <li class="serviceList__item">
+                <a href="#" class="serviceList__link">レシピランキング</a>
+              </li>
+              <li class="serviceList__item">
+                <a href="#" class="serviceList__link">殿堂入りレシピ</a>
+              </li>
+              <li class="serviceList__item">
+                <a href="#" class="serviceList__link">専門家厳選レシピ</a>
+              </li>
+              <li class="serviceList__item">
+                <a href="#" class="serviceList__link">話題のキッチン</a>
+              </li>
+            </ul>
+            <a href="#" class="readMore__link">もっと見る</a>
+            <p class="subTitle">
+              <a href="#">生活関連サービス</a>
+            </p>
+            <ul class="serviceList">
+              <li class="serviceList__item">
+                <a href="#" class="serviceList__link">料理メニュー</a>
+              </li>
+              <li class="serviceList__item">
+                <a href="#" class="serviceList__link">料理教室・イベント</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main__serviceInformation">
+            <div class="recommend">
+              <img href="#" src="images/recommend_recipe_img.png" alt="おすすめレシピ画像">
+              <div class="recommend">
+                <p class="recommend__date">10月7日の<br>おすすめ</p>
+                <p class="recommend__recipe">
+                  <a href="#" class="recommend__recipeName">美味しい♪鶏胸肉と里芋のピリ辛味噌煮☆
+                    <img src="images/user_img.jpg" alt="ユーザーアイコン">
+                    <span class="recommend__name">yukki♡♡</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <p class="subTitle"><a href="#">ニュース</a></p>
+            <div class="newsInner">
+              <div class="newsInner__main">
+                <a href="#" class="newsInner__main--link">
+                  <img class="newsInner__img" src="images/recipe_img.jpg" alt="レシピ写真">
+                  <div class="newsInner__featureWrap">
+                    <span class="newsInner__featureWrap--title">揚げずにホクホク♪大学かぼちゃ</span>
+                    <span class="newsInner__featureWrap--text">秋の味覚がたくさん登場し始めました。その中から今回は、ほくほく美味しい「大学かぼちゃ」をご紹介！</span>
+                  </div>
+                </a>
+              </div>
+              <div class="newsInner__sub">
+                <ul class="arrowList">
+                  <li class="arrowList__item">
+                    <a href="#" class="arrowList__text">秋の晩酌に！大人味おつまみ</a>
+                  </li>
+                  <li class="arrowList__item">
+                    <a href="#" class="arrowList__text">焼くまで10分！りんごケーキ</a>
+                  </li>
+                  <li class="arrowList__item">
+                    <a href="#" class="arrowList__text">「鮭の照り焼き」の時短献立</a>
+                  </li>
+                  <li class="arrowList__item">
+                    <a href="#" class="arrowList__text">低カロリーで◎「ひじきサラダ」</a>
+                  </li>
+                </ul>
+                <a href="#" class="readMore__link">もっと見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside class="sideber">
+      </aside>
+      <footer></footer>
+    </div>
+  </div>
 </body>
 </html>

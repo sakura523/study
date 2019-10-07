@@ -1,0 +1,172 @@
+@charset "UTF-8";
+html {
+  font-size: 14px;
+  font-family: -apple-system, "Roboto", "Helvetica Neue", "Droid Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Meiryo", "メイリオ", "Osaka", "MS PGothic", arial, sans-serif;
+  background: #f7f3e8;
+}
+
+body {
+  line-height: 1.5;
+  color: #3c3c3c;
+}
+
+a {
+  color: #401c00;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #a27652;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__sub {
+  background-color: white;
+  border-bottom: 1px #cac2ab solid;
+  padding: 8px 0;
+}
+
+.header__inner {
+  width: 970px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .memberList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .memberList__item {
+  padding-left: 10px;
+}
+
+.header .memberList__item__item--visited:visited {
+  color: #401c00;
+}
+
+.header .memberList__item__item--text-premium {
+  color: #F3983E;
+  font-weight: bold;
+}
+
+.header__main {
+  padding: 8px 0;
+}
+
+.header__logo {
+  width: 280px;
+  position: relative;
+}
+
+.header__count {
+  position: absolute;
+  color: #F3983E;
+  font-weight: bold;
+  top: 23%;
+  left: 81%;
+  font-size: 12px;
+  font-size: 0.85714rem;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: -0.1rem;
+}
+
+.header__count--large {
+  font-size: 18px;
+  font-size: 1.28571rem;
+}
+
+.header .search__form--text {
+  background-image: url(images/icon_header_search.png);
+  background-repeat: no-repeat;
+  padding: 6px 0 6px 25px;
+  background-position: 3px center;
+  width: 250px;
+  outline: none;
+  border-radius: 3px;
+  border: #401c00 1px solid;
+}
+
+.header .search__form--submit {
+  padding: 3px 5px;
+  outline: none;
+  font-size: 13px;
+  font-size: 0.92857rem;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e0e0e0));
+  background: linear-gradient(white, #e0e0e0);
+  border: #a8a8a8 1px solid;
+}
+
+.header .search__trend {
+  color: #401c00;
+  padding-top: 5px;
+}
+
+.header .trendList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  font-size: 0.78571rem;
+}
+
+.header .trendList__item {
+  margin-right: 8px;
+}
+
+.header .userContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .userContent .myfolder__item--folder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .userContent .myfolder__item--folder img {
+  width: 36px;
+}
+
+.header .userContent .myRecipe img {
+  width: 20px;
+}
+
+.header .userContent .myRecipe__recipeButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  color: aliceblue;
+  padding: 6px 7px 6px 12px;
+  font-size: 14px;
+  font-size: 1rem;
+  border-radius: 4px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#acc854), to(#8fa836));
+  background: linear-gradient(#acc854, #8fa836);
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
