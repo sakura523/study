@@ -50,13 +50,13 @@ a {
     &__item {
       padding-left: 10px;
 
-      &__item--visited {
+      &--visited {
         &:visited {
           color: #401c00;
         }
       }
 
-      &__item--text-premium {
+      &--text-premium {
         color: #F3983E;
         font-weight: bold;
       }

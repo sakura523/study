@@ -54,11 +54,11 @@ a:hover {
   padding-left: 10px;
 }
 
-.header .memberList__item__item--visited:visited {
+.header .memberList__item--visited:visited {
   color: #401c00;
 }
 
-.header .memberList__item__item--text-premium {
+.header .memberList__item--text-premium {
   color: #F3983E;
   font-weight: bold;
 }
