@@ -164,3 +164,62 @@ a {
     }
   }
 }
+
+.contant {
+  width: 100%;
+
+  .main {
+    width: 970px;
+    margin: auto;
+
+    &__inner {
+      width: 650px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #ffffff;
+      border: #a27652 1px solid;
+      border-radius: 4px;
+    }
+
+    &__serviceMenu {
+      width: 330px;
+    }
+
+    .subTitle {
+      background-color: #f8f6f0;
+      padding: 5px 5px 5px 15px;
+
+      a {
+        color: #3c3c3c;
+        font-weight: bold;
+      }
+
+      &__img {
+        width: 20px;
+        display: inline;
+      }
+
+    }
+
+    .serviceLists {
+      &__list {
+        a {
+          display: block;
+          padding: 5px 5px 5px 10px;
+        }
+
+        .icon {
+          &--menu {}
+        }
+      }
+
+      &__serviceInformation {}
+    }
+
+    .readMoreLink {
+      text-align: right;
+      display: block;
+      font-size: 12px;
+    }
+  }
+}

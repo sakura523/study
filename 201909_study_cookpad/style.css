@@ -169,4 +169,56 @@ a:hover {
   background: linear-gradient(#acc854, #8fa836);
   font-weight: bold;
 }
+
+.contant {
+  width: 100%;
+}
+
+.contant .main {
+  width: 970px;
+  margin: auto;
+}
+
+.contant .main__inner {
+  width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+  border: #a27652 1px solid;
+  border-radius: 4px;
+}
+
+.contant .main__serviceMenu {
+  width: 330px;
+}
+
+.contant .main .subTitle {
+  background-color: #f8f6f0;
+  padding: 5px 5px 5px 15px;
+}
+
+.contant .main .subTitle a {
+  color: #3c3c3c;
+  font-weight: bold;
+}
+
+.contant .main .subTitle__img {
+  width: 20px;
+  display: inline;
+}
+
+.contant .main .serviceLists__list a {
+  display: block;
+  padding: 5px 5px 5px 10px;
+}
+
+.contant .main .readMoreLink {
+  text-align: right;
+  display: block;
+  font-size: 12px;
+}
 /*# sourceMappingURL=style.css.map */
