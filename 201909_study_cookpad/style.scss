@@ -181,6 +181,15 @@ a {
       border-radius: 4px;
     }
 
+    .mainContent {
+      display: block;
+      .mainCard {
+        &__wrap {
+          display: flex;
+        }
+      }
+    }
+
     &__serviceMenu {
       width: 330px;
     }
@@ -195,7 +204,7 @@ a {
       }
 
       &__img {
-        width: 2;
+        width: 20px;
         display: inline;
       }
 
@@ -215,6 +224,10 @@ a {
       text-align: right;
       display: block;
       font-size: 12px;
+    }
+
+    .bestRecipe {
+      background-color: #401c00;
     }
   }
 }

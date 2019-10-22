@@ -192,6 +192,16 @@ a:hover {
   border-radius: 4px;
 }
 
+.contant .main .mainContent {
+  display: block;
+}
+
+.contant .main .mainContent .mainCard__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .contant .main__serviceMenu {
   width: 330px;
 }
@@ -207,7 +217,7 @@ a:hover {
 }
 
 .contant .main .subTitle__img {
-  width: 2;
+  width: 20px;
   display: inline;
 }
 
@@ -220,5 +230,9 @@ a:hover {
   text-align: right;
   display: block;
   font-size: 12px;
+}
+
+.contant .main .bestRecipe {
+  background-color: #401c00;
 }
 /*# sourceMappingURL=style.css.map */
