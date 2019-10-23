@@ -188,7 +188,7 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #ffffff;
-  border: #a27652 1px solid;
+  border: #ded5c0 1px solid;
   border-radius: 4px;
 }
 
@@ -202,13 +202,19 @@ a:hover {
   display: flex;
 }
 
+.contant .main .mainCard__inner {
+  position: relative;
+  padding: 14px;
+}
+
 .contant .main__serviceMenu {
   width: 330px;
 }
 
 .contant .main .subTitle {
   background-color: #f8f6f0;
-  padding: 5px 5px 5px 15px;
+  padding: 5px 5px 5px 10px;
+  text-decoration: underline;
 }
 
 .contant .main .subTitle a {
@@ -217,8 +223,7 @@ a:hover {
 }
 
 .contant .main .subTitle__img {
-  width: 20px;
-  display: inline;
+  width: 11%;
 }
 
 .contant .main .serviceLists__list a {
@@ -230,9 +235,99 @@ a:hover {
   text-align: right;
   display: block;
   font-size: 12px;
+  text-decoration: underline;
+  padding: 5px;
 }
 
-.contant .main .bestRecipe {
-  background-color: #401c00;
+.contant .main .mainContent__serviceInformation img {
+  border-radius: 6px;
+}
+
+.contant .main .mainContent__serviceInformation .recommend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5px;
+}
+
+.contant .main .mainContent__serviceInformation .recommend__date {
+  height: 45px;
+  width: 120px;
+  background-color: #F3983E;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+.contant .main .mainContent__serviceInformation .recommend__date span {
+  font-size: 16px;
+}
+
+.contant .main .mainContent__serviceInformation .recommend__recipe {
+  font-size: 129%;
+  padding-left: 10px;
+}
+
+.contant .main .mainContent__serviceInformation .recommend__recipe a {
+  color: #7d940a;
+  font-weight: bold;
+  display: block;
+}
+
+.contant .main .mainContent__serviceInformation .recommend__recipe img {
+  width: 7%;
+}
+
+.contant .main .mainContent__serviceInformation .recommend__recipe span {
+  color: #666666;
+  font-size: 12px;
+}
+
+.contant .main .news {
+  display: inline;
+}
+
+.contant .main .news__main--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contant .main .news__img {
+  width: 110px;
+  border-radius: 4px;
+}
+
+.contant .main .news .newsFeatureWrap {
+  padding-left: 10px;
+}
+
+.contant .main .news .newsFeatureWrap__title {
+  color: #a27652;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contant .main .news .newsFeatureWrap__text {
+  font-size: 12px;
+  padding-top: 5px;
+  color: #666666;
+}
+
+.contant .main .news .arrowLists {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contant .main .news .arrowLists__list {
+  width: 50%;
+  font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */

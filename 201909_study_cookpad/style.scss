@@ -177,7 +177,7 @@ a {
       display: flex;
       justify-content: space-between;
       background-color: #ffffff;
-      border: #a27652 1px solid;
+      border: #ded5c0 1px solid;
       border-radius: 4px;
     }
 
@@ -190,13 +190,19 @@ a {
       }
     }
 
+    .mainCard__inner{
+      position: relative;
+      padding: 14px;
+    }
+
     &__serviceMenu {
       width: 330px;
     }
 
     .subTitle {
       background-color: #f8f6f0;
-      padding: 5px 5px 5px 15px;
+      padding: 5px 5px 5px 10px;
+      text-decoration: underline;
 
       a {
         color: #3c3c3c;
@@ -204,10 +210,8 @@ a {
       }
 
       &__img {
-        width: 20px;
-        display: inline;
+        width: 11%;
       }
-
     }
 
     .serviceLists {
@@ -219,15 +223,87 @@ a {
 
       }
     }
-
     .readMoreLink {
       text-align: right;
       display: block;
       font-size: 12px;
+      text-decoration: underline;
+      padding: 5px;
     }
 
-    .bestRecipe {
-      background-color: #401c00;
+    .mainContent__serviceInformation{
+      img {
+        border-radius: 6px;
+      }
+      .recommend{
+        display: flex;
+        padding-top: 5px;
+        &__date{
+          height: 45px;
+          width: 120px;
+          background-color: #F3983E;
+          color: #ffffff;
+          font-weight: bold;
+          text-align: center;
+          border-radius: 4px;
+          padding: 3px;
+          font-size: 12px;
+            span{
+              font-size: 16px;
+            }
+        }
+        &__recipe{
+          font-size: 129%;
+          padding-left: 10px;
+          a {
+            color: #7d940a;
+            font-weight: bold;
+            display: block;
+          }
+          img {
+            width: 7%;
+          }
+          span{
+            color: #666666;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .news {
+      display: inline;
+      &__main {
+        &--link {
+          display: flex;
+        }
+      }
+      &__img {
+        width: 110px;
+        border-radius: 4px;
+      }
+      .newsFeatureWrap {
+        padding-left: 10px;
+        &__title {
+          color: #a27652;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        &__text {
+          font-size: 12px;
+          padding-top: 5px;
+          color: #666666;
+        }
+      }
+      .arrowLists {
+        padding-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        &__list {
+          width: 50%;
+          font-size: 13px;
+        }
+      }
     }
   }
 }
