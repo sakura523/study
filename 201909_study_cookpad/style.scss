@@ -179,6 +179,7 @@ a {
       background-color: #ffffff;
       border: #ded5c0 1px solid;
       border-radius: 4px;
+      padding-top: 10px;
     }
 
     .mainContent {
@@ -187,6 +188,22 @@ a {
         &__wrap {
           display: flex;
         }
+      }
+    }
+
+    .mainContent__title {
+      padding: 10px;
+      border-top: 6px solid #7d940a;
+    }
+
+    .title {
+      &__recipe {
+        color: #7d940a;
+        background-image: url(images/title_icon_recipe.png);
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        font-size: 23px;
+        font-weight: normal;
       }
     }
 
@@ -305,5 +322,6 @@ a {
         }
       }
     }
+
   }
 }
