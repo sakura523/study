@@ -566,4 +566,66 @@ a:hover {
   color: #666666;
   font-size: 12px;
 }
+
+.contant .main .menuCategories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  border-top: #ded5c0 1px solid;
+}
+
+.contant .main .menuCategories:last-child .menuCategories__list {
+  border-top: none;
+}
+
+.contant .main .menuCategories__list {
+  margin: 15px 0px;
+  border-right: #ded5c0 1px solid;
+}
+
+.contant .main .menuCategories__list--text {
+  margin: 23px;
+}
+
+.contant .main .premiumRecipe {
+  width: 337px;
+}
+
+.contant .main .premiumRecipe__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contant .main .premiumRecipeDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.contant .main .premiumRecipeDetails__lists {
+  margin: 5px 0px;
+  border-right: #ded5c0 1px solid;
+}
+
+.contant .main .premiumRecipeDetails__list {
+  margin: 0 25px;
+}
+
+.contant .main .premiumRecipeDetails__list--title {
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+}
+
+.contant .main .premiumRecipeDetails__list--contents {
+  text-align: center;
+  color: #3c3c3c;
+}
+
+.contant .main .premiumRecipeDetails__list--contents span {
+  font-size: 16px;
+}
 /*# sourceMappingURL=style.css.map */

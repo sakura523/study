@@ -184,6 +184,7 @@ a {
 
     .mainContent {
       display: block;
+
       .mainCard {
         &__wrap {
           display: flex;
@@ -211,12 +212,14 @@ a {
       &__borderLeft {
         border-right: #ffffff 1px solid;
       }
+
       &__borderRight {
         border-left: #ded5c0 1px solid;
       }
-      &__inner{
-      position: relative;
-      padding: 14px;
+
+      &__inner {
+        position: relative;
+        padding: 14px;
       }
     }
 
@@ -264,6 +267,7 @@ a {
 
       }
     }
+
     .readMoreLink {
       text-align: right;
       display: block;
@@ -273,15 +277,18 @@ a {
       font-weight: bold;
     }
 
-    .mainContent__serviceInformation{
+    .mainContent__serviceInformation {
       border-left: #ded5c0 1px solid;
+
       img {
         border-radius: 6px;
       }
-      .recommend{
+
+      .recommend {
         display: flex;
         padding-top: 5px;
-        &__date{
+
+        &__date {
           height: 45px;
           width: 120px;
           background-color: #F3983E;
@@ -291,22 +298,27 @@ a {
           border-radius: 4px;
           padding: 3px;
           font-size: 12px;
-            span{
-              font-size: 16px;
-            }
+
+          span {
+            font-size: 16px;
+          }
         }
-        &__recipe{
+
+        &__recipe {
           font-size: 129%;
           padding-left: 10px;
+
           a {
             color: #7d940a;
             font-weight: bold;
             display: block;
           }
+
           img {
             width: 7%;
           }
-          span{
+
+          span {
             color: #666666;
             font-size: 12px;
           }
@@ -316,32 +328,39 @@ a {
 
     .news {
       display: inline;
+
       &__main {
         &--link {
           display: flex;
         }
       }
+
       &__img {
         width: 110px;
         border-radius: 4px;
       }
+
       .newsFeatureWrap {
         padding-left: 10px;
+
         &__title {
           color: #a27652;
           font-size: 20px;
           font-weight: bold;
         }
+
         &__text {
           font-size: 12px;
           padding-top: 5px;
           color: #666666;
         }
       }
+
       .arrowLists {
         padding-top: 15px;
         display: flex;
         flex-wrap: wrap;
+
         &__list {
           width: 50%;
           font-size: 13px;
@@ -352,6 +371,7 @@ a {
     .recipe__inner {
       padding: 6px;
     }
+
     .dailyRank {
       &__wrap {
         display: flex;
@@ -385,25 +405,31 @@ a {
         font-weight: bold;
         color: #401c00;
       }
+
       &__text--large {
         font-size: 20px;
       }
     }
+
     .topicRecipe {
       width: 340px;
       display: flex;
+
       &__list {
         margin: 3px;
         border-radius: 4px;
+
         &--recipeName {
           color: #7d940a;
           font-size: 14px;
           font-weight: bold;
         }
+
         &--name {
           font-size: 80%;
           color: #999999;
         }
+
         &--img {
           border-radius: 4px;
         }
@@ -414,17 +440,20 @@ a {
       a {
         display: flex;
       }
+
       &__text {
         color: #401c00;
         font-weight: bold;
         font-size: 16px;
         padding-top: 26px;
       }
+
       span {
         color: #F3983E;
       }
+
       &__list {
-        margin:0 0 0 auto;
+        margin: 0 0 0 auto;
         display: flex;
         border-radius: 4px;
 
@@ -438,14 +467,17 @@ a {
       clear: both;
       display: block;
     }
+
     .selectedRecipeList {
       float: left;
       width: 50%;
       padding-top: 12px;
+
       &__link {
         color: #401c00;
       }
     }
+
     .categoryIcon {
       background: url(images/category_icons.png)no-repeat 0px 0px;
       top: 40px;
@@ -455,21 +487,26 @@ a {
     .proRecipe {
       &__list {
         padding: 8px;
+
         &--link {
           display: flex;
         }
       }
+
       &__img {
         width: 90px;
         border-radius: 4px;
       }
+
       &__titleWrap {
         padding-left: 10px;
       }
+
       &__userName {
         color: #999999;
         font-size: 12px;
       }
+
       &__title {
         color: #401c00;
         font-weight: bold;
@@ -482,9 +519,11 @@ a {
 
     .topicKitchenLists {
       display: flex;
+
       &__list {
         width: 80px;
         margin-right: 4px;
+
         &--name {
           font-weight: bold;
           color: #401c00;
@@ -496,20 +535,78 @@ a {
       &__img {
         width: 100%;
       }
+
       &__wrap {
         display: flex;
       }
+
       &__recipe {
         margin: 0 10px;
         font-weight: bold;
         font-size: 16px;
       }
+
       &__icon {
         width: 30px;
       }
+
       &__name {
         color: #666666;
         font-size: 12px;
+      }
+    }
+
+    .menuCategories {
+      display: flex;
+      margin-top: 10px;
+      border-top: #ded5c0 1px solid;
+
+      &:last-child .menuCategories__list {
+        border-top: none;
+      }
+
+      &__list {
+        margin: 15px 0px;
+        border-right: #ded5c0 1px solid;
+
+        &--text {
+          margin: 23px;
+        }
+      }
+    }
+
+    .premiumRecipe {
+      width: 337px;
+
+      &__wrap {
+        display: flex;
+      }
+    }
+
+    .premiumRecipeDetails {
+      display: flex;
+      margin-top: 10px;
+
+      &__lists {
+        margin: 5px 0px;
+        border-right: #ded5c0 1px solid;
+      }
+
+      &__list {
+        margin: 0 25px;
+        &--title {
+          font-size: 12px;
+          color: #666666;
+          text-align: center;
+        }
+        &--contents {
+          text-align: center;
+          color: #3c3c3c;
+
+          span {
+            font-size: 16px;
+          }
+        }
       }
     }
   }
