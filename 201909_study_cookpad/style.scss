@@ -173,7 +173,7 @@ a {
     margin: auto;
 
     &__inner {
-      width: 650px;
+      width: 675px;
       display: flex;
       justify-content: space-between;
       background-color: #ffffff;
@@ -207,16 +207,32 @@ a {
       }
     }
 
-    .mainCard__inner{
+    .mainCard {
+      &__borderLeft {
+        border-right: #ffffff 1px solid;
+      }
+      &__borderRight {
+        border-left: #ded5c0 1px solid;
+      }
+      &__inner{
       position: relative;
       padding: 14px;
+      }
     }
 
     &__serviceMenu {
+      border-right: #ffffff 1px solid;
       width: 330px;
     }
 
+    .serviceMenu__wrap {
+      &:first-child .subTitle {
+        border-top: none;
+      }
+    }
+
     .subTitle {
+      border-top: #ded5c0 1px solid;
       background-color: #f8f6f0;
       padding: 5px 5px 5px 10px;
       text-decoration: underline;
@@ -227,7 +243,15 @@ a {
       }
 
       &__img {
-        width: 11%;
+        width: 17px;
+      }
+
+      &--text {
+        font-size: 79%;
+        color: #666666;
+        font-weight: normal;
+        padding-left: 5px;
+        text-decoration: none;
       }
     }
 
@@ -246,9 +270,11 @@ a {
       font-size: 12px;
       text-decoration: underline;
       padding: 5px;
+      font-weight: bold;
     }
 
     .mainContent__serviceInformation{
+      border-left: #ded5c0 1px solid;
       img {
         border-radius: 6px;
       }
@@ -323,5 +349,168 @@ a {
       }
     }
 
+    .recipe__inner {
+      padding: 6px;
+    }
+    .dailyRank {
+      &__wrap {
+        display: flex;
+      }
+
+      &__item {
+        display: block;
+        margin: 4px;
+        position: relative;
+      }
+
+      &__icon {
+        position: absolute;
+        background: #ffffff;
+        top: -3px;
+        left: -1px;
+        border-radius: 4px;
+      }
+
+      &__img {
+        border-radius: 4px;
+      }
+
+      &__sub {
+        width: 34%;
+      }
+
+      &__text {
+        margin: 10px 0;
+        text-align: center;
+        font-weight: bold;
+        color: #401c00;
+      }
+      &__text--large {
+        font-size: 20px;
+      }
+    }
+    .topicRecipe {
+      width: 340px;
+      display: flex;
+      &__list {
+        margin: 3px;
+        border-radius: 4px;
+        &--recipeName {
+          color: #7d940a;
+          font-size: 14px;
+          font-weight: bold;
+        }
+        &--name {
+          font-size: 80%;
+          color: #999999;
+        }
+        &--img {
+          border-radius: 4px;
+        }
+      }
+    }
+
+    .bestRecipe {
+      a {
+        display: flex;
+      }
+      &__text {
+        color: #401c00;
+        font-weight: bold;
+        font-size: 16px;
+        padding-top: 26px;
+      }
+      span {
+        color: #F3983E;
+      }
+      &__list {
+        margin:0 0 0 auto;
+        display: flex;
+        border-radius: 4px;
+
+        &--img {
+          width: 80px;
+        }
+      }
+    }
+
+    .selectedRecipe {
+      clear: both;
+      display: block;
+    }
+    .selectedRecipeList {
+      float: left;
+      width: 50%;
+      padding-top: 12px;
+      &__link {
+        color: #401c00;
+      }
+    }
+    .categoryIcon {
+      background: url(images/category_icons.png)no-repeat 0px 0px;
+      top: 40px;
+      left: 40px;
+    }
+
+    .proRecipe {
+      &__list {
+        padding: 8px;
+        &--link {
+          display: flex;
+        }
+      }
+      &__img {
+        width: 90px;
+        border-radius: 4px;
+      }
+      &__titleWrap {
+        padding-left: 10px;
+      }
+      &__userName {
+        color: #999999;
+        font-size: 12px;
+      }
+      &__title {
+        color: #401c00;
+        font-weight: bold;
+      }
+    }
+
+    .proRecipe__wrap {
+      width: 300px;
+    }
+
+    .topicKitchenLists {
+      display: flex;
+      &__list {
+        width: 80px;
+        margin-right: 4px;
+        &--name {
+          font-weight: bold;
+          color: #401c00;
+        }
+      }
+    }
+
+    .everyoneRecipe {
+      &__img {
+        width: 100%;
+      }
+      &__wrap {
+        display: flex;
+      }
+      &__recipe {
+        margin: 0 10px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      &__icon {
+        width: 30px;
+      }
+      &__name {
+        color: #666666;
+        font-size: 12px;
+      }
+    }
   }
 }

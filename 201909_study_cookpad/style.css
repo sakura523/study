@@ -180,7 +180,7 @@ a:hover {
 }
 
 .contant .main__inner {
-  width: 650px;
+  width: 675px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,16 +217,30 @@ a:hover {
   font-weight: normal;
 }
 
+.contant .main .mainCard__borderLeft {
+  border-right: #ffffff 1px solid;
+}
+
+.contant .main .mainCard__borderRight {
+  border-left: #ded5c0 1px solid;
+}
+
 .contant .main .mainCard__inner {
   position: relative;
   padding: 14px;
 }
 
 .contant .main__serviceMenu {
+  border-right: #ffffff 1px solid;
   width: 330px;
 }
 
+.contant .main .serviceMenu__wrap:first-child .subTitle {
+  border-top: none;
+}
+
 .contant .main .subTitle {
+  border-top: #ded5c0 1px solid;
   background-color: #f8f6f0;
   padding: 5px 5px 5px 10px;
   text-decoration: underline;
@@ -238,7 +252,15 @@ a:hover {
 }
 
 .contant .main .subTitle__img {
-  width: 11%;
+  width: 17px;
+}
+
+.contant .main .subTitle--text {
+  font-size: 79%;
+  color: #666666;
+  font-weight: normal;
+  padding-left: 5px;
+  text-decoration: none;
 }
 
 .contant .main .serviceLists__list a {
@@ -252,6 +274,11 @@ a:hover {
   font-size: 12px;
   text-decoration: underline;
   padding: 5px;
+  font-weight: bold;
+}
+
+.contant .main .mainContent__serviceInformation {
+  border-left: #ded5c0 1px solid;
 }
 
 .contant .main .mainContent__serviceInformation img {
@@ -344,5 +371,199 @@ a:hover {
 .contant .main .news .arrowLists__list {
   width: 50%;
   font-size: 13px;
+}
+
+.contant .main .recipe__inner {
+  padding: 6px;
+}
+
+.contant .main .dailyRank__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contant .main .dailyRank__item {
+  display: block;
+  margin: 4px;
+  position: relative;
+}
+
+.contant .main .dailyRank__icon {
+  position: absolute;
+  background: #ffffff;
+  top: -3px;
+  left: -1px;
+  border-radius: 4px;
+}
+
+.contant .main .dailyRank__img {
+  border-radius: 4px;
+}
+
+.contant .main .dailyRank__sub {
+  width: 34%;
+}
+
+.contant .main .dailyRank__text {
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #401c00;
+}
+
+.contant .main .dailyRank__text--large {
+  font-size: 20px;
+}
+
+.contant .main .topicRecipe {
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contant .main .topicRecipe__list {
+  margin: 3px;
+  border-radius: 4px;
+}
+
+.contant .main .topicRecipe__list--recipeName {
+  color: #7d940a;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contant .main .topicRecipe__list--name {
+  font-size: 80%;
+  color: #999999;
+}
+
+.contant .main .topicRecipe__list--img {
+  border-radius: 4px;
+}
+
+.contant .main .bestRecipe a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contant .main .bestRecipe__text {
+  color: #401c00;
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 26px;
+}
+
+.contant .main .bestRecipe span {
+  color: #F3983E;
+}
+
+.contant .main .bestRecipe__list {
+  margin: 0 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+}
+
+.contant .main .bestRecipe__list--img {
+  width: 80px;
+}
+
+.contant .main .selectedRecipe {
+  clear: both;
+  display: block;
+}
+
+.contant .main .selectedRecipeList {
+  float: left;
+  width: 50%;
+  padding-top: 12px;
+}
+
+.contant .main .selectedRecipeList__link {
+  color: #401c00;
+}
+
+.contant .main .categoryIcon {
+  background: url(images/category_icons.png) no-repeat 0px 0px;
+  top: 40px;
+  left: 40px;
+}
+
+.contant .main .proRecipe__list {
+  padding: 8px;
+}
+
+.contant .main .proRecipe__list--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contant .main .proRecipe__img {
+  width: 90px;
+  border-radius: 4px;
+}
+
+.contant .main .proRecipe__titleWrap {
+  padding-left: 10px;
+}
+
+.contant .main .proRecipe__userName {
+  color: #999999;
+  font-size: 12px;
+}
+
+.contant .main .proRecipe__title {
+  color: #401c00;
+  font-weight: bold;
+}
+
+.contant .main .proRecipe__wrap {
+  width: 300px;
+}
+
+.contant .main .topicKitchenLists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contant .main .topicKitchenLists__list {
+  width: 80px;
+  margin-right: 4px;
+}
+
+.contant .main .topicKitchenLists__list--name {
+  font-weight: bold;
+  color: #401c00;
+}
+
+.contant .main .everyoneRecipe__img {
+  width: 100%;
+}
+
+.contant .main .everyoneRecipe__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contant .main .everyoneRecipe__recipe {
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contant .main .everyoneRecipe__icon {
+  width: 30px;
+}
+
+.contant .main .everyoneRecipe__name {
+  color: #666666;
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */
