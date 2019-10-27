@@ -230,6 +230,12 @@ a:hover {
   padding: 14px;
 }
 
+.contant .main .mainCard__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .contant .main__serviceMenu {
   border-right: #ffffff 1px solid;
   width: 330px;
@@ -359,7 +365,7 @@ a:hover {
   color: #666666;
 }
 
-.contant .main .news .arrowLists {
+.contant .main .arrowLists {
   padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,13 +374,13 @@ a:hover {
       flex-wrap: wrap;
 }
 
-.contant .main .news .arrowLists__list {
+.contant .main .arrowLists__list {
   width: 50%;
   font-size: 13px;
 }
 
 .contant .main .recipe__inner {
-  padding: 6px;
+  padding: 8px;
 }
 
 .contant .main .dailyRank__wrap {
@@ -533,13 +539,15 @@ a:hover {
 }
 
 .contant .main .topicKitchenLists__list {
-  width: 80px;
-  margin-right: 4px;
+  width: 78px;
+  margin-right: 5px;
 }
 
 .contant .main .topicKitchenLists__list--name {
   font-weight: bold;
   color: #401c00;
+  font-size: 12px;
+  text-align: center;
 }
 
 .contant .main .everyoneRecipe__img {
@@ -575,13 +583,13 @@ a:hover {
   border-top: #ded5c0 1px solid;
 }
 
-.contant .main .menuCategories:last-child .menuCategories__list {
-  border-top: none;
-}
-
 .contant .main .menuCategories__list {
   margin: 15px 0px;
   border-right: #ded5c0 1px solid;
+}
+
+.contant .main .menuCategories__list:last-child {
+  border-right: none;
 }
 
 .contant .main .menuCategories__list--text {
@@ -610,6 +618,10 @@ a:hover {
   border-right: #ded5c0 1px solid;
 }
 
+.contant .main .premiumRecipeDetails__lists:last-child {
+  border-right: none;
+}
+
 .contant .main .premiumRecipeDetails__list {
   margin: 0 25px;
 }
@@ -627,5 +639,82 @@ a:hover {
 
 .contant .main .premiumRecipeDetails__list--contents span {
   font-size: 16px;
+}
+
+.contant .main .rankingItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+}
+
+.contant .main .rankingItem__item {
+  width: 60px;
+  display: block;
+  margin: 4px;
+  position: relative;
+}
+
+.contant .main .rankingItem__title {
+  padding: 4px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: #401c00;
+}
+
+.contant .main .rankingItem__icon {
+  width: 25px;
+  position: absolute;
+  background: #ffffff;
+  top: -3px;
+  left: -1px;
+  border-radius: 4px;
+}
+
+.contant .main .rankingItem__img {
+  border-radius: 4px;
+}
+
+.contant .main .rankingItem__icons {
+  width: 25px;
+}
+
+.contant .main .rankingList__list--text {
+  color: #401c00;
+  margin-left: 5px;
+}
+
+.contant .main .rankingList span {
+  text-align: center;
+  padding-left: 3px;
+}
+
+.contant .main .underBorder {
+  border-bottom: #ded5c0 1px solid;
+}
+
+.contant .main .deviceInformation {
+  margin-top: 5px;
+}
+
+.contant .main .deviceInformation__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contant .main .deviceInformation__main--img {
+  display: block;
+  margin: 0 10px;
+}
+
+.contant .main .deviceInformation__main--text {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.contant .main .deviceInformation__main--text p {
+  padding: 5px 0;
 }
 /*# sourceMappingURL=style.css.map */
