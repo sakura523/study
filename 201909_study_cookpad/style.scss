@@ -483,12 +483,35 @@ a {
       }
     }
 
+    .recipeCategoryLists {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .categoryLists {
+      &__title {
+        color: #401c00;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+
+    .categoryListsWrap {
+      margin-top: 5px;
+    }
+
+    .categoryBox {
+      width: 33%;
+      margin-bottom: 30px;
+    }
+/*
     .categoryIcon {
       background: url(images/category_icons.png)no-repeat 0px 0px;
       top: 40px;
       left: 40px;
     }
-
+*/
     .proRecipe {
       &__list {
         padding: 8px;
