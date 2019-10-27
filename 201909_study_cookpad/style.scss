@@ -699,10 +699,111 @@ a {
         }
       }
     }
+
     .sideber {
       margin-top: 10px;
       width: 300px;
       margin-left: 20px;
+
+      &__inner {
+        padding: 8px;
+      }
+    }
+
+    .sideberContent {
+      margin-top: 15px;
+      border-radius: 4px;
+      border: #ded5c0 1px solid;
+      border-radius: 4px;
+      background-color: #ffffff;
+
+      &__title {
+        padding: 5px 6px;
+        background-color: #EBDAB2;
+        display: flex;
+        font-weight: bold;
+        color: #401c00;
+        font-size: 11px;
+
+        &--text {
+          font-size: 12px;
+        }
+      }
+
+      .adIcon {
+        margin-left: 10px;
+        width: 30px;
+        height: 18px;
+        padding-top: 1px;
+        background-color: #A27652;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 3px;
+      }
+
+      .listLink {
+        display: block;
+        text-decoration: underline;
+        margin-left: auto;
+      }
+    }
+
+    .recommendedListsWrap {
+      color: #401c00;
+      font-size: 15px;
+      font-weight: bold;
+      display: flex;
+      border-bottom: #ded5c0 1px solid;
+      padding-bottom: 5px;
+    }
+
+    .deviceInformation {
+      &__img {
+        height: fit-content;
+        margin-left: auto;
+        padding-top: 4px;
+      }
+    }
+
+    .sideberMargin {
+      margin: 10px 0 10px 0;
+    }
+
+    .makerRecipe {
+      display: flex;
+    }
+
+    .makerRecipeLists {
+      &__list {
+        display: flex;
+        border-bottom: #ded5c0 1px solid;
+        padding: 3px 0;
+
+        &--img {
+          width: 50px;
+        }
+      }
+
+      &__recipe {
+        padding: 0 10px;
+        font-size: 10px;
+        color: #999999;
+
+        &--title {
+          font-size: 14px;
+          color: #401c00;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+
+        span {
+          text-decoration: underline;
+          color: #401c00;
+          font-size: 12px;
+          padding-left: 5px;
+        }
+      }
     }
   }
+
 }
