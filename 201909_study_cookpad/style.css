@@ -717,4 +717,14 @@ a:hover {
 .contant .main .deviceInformation__main--text p {
   padding: 5px 0;
 }
+
+.contant .main .sideber {
+  width: 300px;
+  margin-left: 20px;
+  float: right;
+}
+
+.contant .main .sideber__content {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
