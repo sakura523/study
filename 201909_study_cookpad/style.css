@@ -177,6 +177,9 @@ a:hover {
 .contant .main {
   width: 970px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contant .main__inner {
@@ -719,12 +722,8 @@ a:hover {
 }
 
 .contant .main .sideber {
+  margin-top: 10px;
   width: 300px;
   margin-left: 20px;
-  float: right;
-}
-
-.contant .main .sideber__content {
-  display: block;
 }
 /*# sourceMappingURL=style.css.map */
