@@ -806,4 +806,78 @@ a {
     }
   }
 
+  .footer {
+    width: 100%;
+  }
+
+  .footerImg {
+    background: url(images/mega_footer_bg.png);
+  }
+
+  .footerMenue {
+    width: 970px;
+    margin: auto;
+  }
+
+  .footerMenueText {
+    text-decoration: underline;
+    font-size: 12px;
+  }
+
+  h3 {
+    margin-top: 20px;
+    color: #401c00;
+  }
+
+  .footerMenueWrap {
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+
+    &__list {
+      width: 20%;
+
+    }
+
+    .footerMenueLists {
+      margin-top: 5px;
+      padding-right: 40px;
+
+    }
+  }
+
+  .footerRink {
+    border-top: #ded5c0 1px solid;
+    width: 970px;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 20px;
+  }
+
+  .footerRinkWrap {
+    &__list {
+      display: flex;
+      margin: 10px;
+    }
+
+    &__title {
+      color: #401c00;
+      font-weight: bold;
+      margin-right: 30px;
+    }
+  }
+
+  .footerRinkLists {
+    display: flex;
+
+    &__list {
+      margin-right: 10px;
+    }
+  }
+
+  .footerCopyright {
+    width: 970px;
+    margin: auto;
+    margin-top: 20px;
+  }
 }

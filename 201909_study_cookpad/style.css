@@ -831,4 +831,81 @@ a:hover {
   font-size: 12px;
   padding-left: 5px;
 }
+
+.contant .footer {
+  width: 100%;
+}
+
+.contant .footerImg {
+  background: url(images/mega_footer_bg.png);
+}
+
+.contant .footerMenue {
+  width: 970px;
+  margin: auto;
+}
+
+.contant .footerMenueText {
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.contant h3 {
+  margin-top: 20px;
+  color: #401c00;
+}
+
+.contant .footerMenueWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.contant .footerMenueWrap__list {
+  width: 20%;
+}
+
+.contant .footerMenueWrap .footerMenueLists {
+  margin-top: 5px;
+  padding-right: 40px;
+}
+
+.contant .footerRink {
+  border-top: #ded5c0 1px solid;
+  width: 970px;
+  margin: auto;
+  margin-top: 50px;
+  padding-top: 20px;
+}
+
+.contant .footerRinkWrap__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+.contant .footerRinkWrap__title {
+  color: #401c00;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.contant .footerRinkLists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contant .footerRinkLists__list {
+  margin-right: 10px;
+}
+
+.contant .footerCopyright {
+  width: 970px;
+  margin: auto;
+  margin-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */
