@@ -50,6 +50,33 @@ a:hover {
   padding-top: 5px;
 }
 
+.search__form--text {
+  background-image: url(images/icon_header_search.png);
+  background-repeat: no-repeat;
+  padding: 6px 0 6px 25px;
+  background-position: 3px center;
+  width: 250px;
+  outline: none;
+  border-radius: 3px;
+  border: #401c00 1px solid;
+}
+
+.search__form--submit {
+  padding: 3px 5px;
+  outline: none;
+  font-size: 13px;
+  font-size: 0.92857rem;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e0e0e0));
+  background: linear-gradient(white, #e0e0e0);
+  border: #a8a8a8 1px solid;
+}
+
+.search__trend {
+  color: #401c00;
+  padding-top: 5px;
+}
+
 .header {
   width: 100%;
 }
