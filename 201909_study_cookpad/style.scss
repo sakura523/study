@@ -27,35 +27,7 @@ a {
     text-decoration: underline;
   }
 }
-.search {
 
-  &__form {
-    &--text {
-      background-image: url(images/icon_header_search.png);
-      background-repeat: no-repeat;
-      padding: 6px 0 6px 25px;
-      background-position: 3px center;
-      width: 250px;
-      outline: none;
-      border-radius: 3px;
-      border: #401c00 1px solid;
-    }
-
-    &--submit {
-      padding: 3px 5px;
-      outline: none;
-      @include fontsize(13);
-      border-radius: 3px;
-      background: linear-gradient(rgb(255, 255, 255), rgb(224, 224, 224));
-      border: rgb(168, 168, 168) 1px solid;
-    }
-  }
-
-  &__trend {
-    color: #401c00;
-    padding-top: 5px;
-  }
-}
 
 .search {
 
