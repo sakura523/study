@@ -27,14 +27,11 @@ a:hover {
   background-color: #FFFF;
 }
 
-.header__main {
+.header__inner {
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.header__inner {
-  padding: 10px;
 }
 
 .header__logo {
@@ -100,5 +97,151 @@ a:hover {
 
 .header__sub {
   background-color: #F3983E;
+}
+
+.header .headerBunner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 5px;
+}
+
+.header .headerBunner__img {
+  width: 20px;
+}
+
+.header .headerBunner__text {
+  font-size: 16px;
+  color: #FFFF;
+  padding-left: 10px;
+}
+
+.container .contant .main .mainMenu__recipe {
+  position: relative;
+}
+
+.container .contant .main .mainMenu__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #4c4a40;
+}
+
+.container .contant .main .mainMenu__list {
+  border-right: #ded5c0 1px solid;
+  width: 33%;
+  text-align: center;
+  margin: 5px;
+}
+
+.container .contant .main .mainMenu .mainMenuContainer__name {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.container .contant .main .mainMenuInfo {
+  margin: 5px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .contant .main .mainMenuInfo__label {
+  margin: 5px;
+  padding: 5px 0;
+  text-align: center;
+  background-color: #F3983E;
+  color: #FFFF;
+  width: 50px;
+  border-radius: 4px;
+}
+
+.container .contant .main .mainMenuInfo__label--manth {
+  font-size: 8px;
+}
+
+.container .contant .main .mainMenuInfo__title {
+  color: #FFFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.container .contant .main .mainMenuInfo__name {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  bottom: 3px;
+  position: absolute;
+  right: 0;
+}
+
+.container .contant .main .mainMenuInfo__name--icon {
+  width: 20px;
+  border-radius: 4px;
+}
+
+.container .contant .main .mainMenuInfo__name p {
+  color: #FFFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 8px;
+  display: inline;
+}
+
+.container__inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  background-color: #ffffff;
+  border: #ded5c0 1px solid;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.container .mainContent {
+  display: block;
+}
+
+.container .mainContent__title {
+  padding: 10px;
+  border-top: 6px solid #7d940a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .underBorder {
+  border-bottom: #ded5c0 1px solid;
+}
+
+.container .title__recipe {
+  font-size: 16px;
+}
+
+.container .listLink {
+  text-align: right;
+  font-size: 12px;
+  padding: 5px;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.recommendedLists__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recommendedLists--img {
+  width: 50px;
 }
 /*# sourceMappingURL=style.css.map */

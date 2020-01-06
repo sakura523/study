@@ -31,10 +31,10 @@ a {
 .header {
   background-color: #FFFF;
   &__main {
-    display: flex;
   }
   &__inner {
     padding: 10px;
+    display: flex;
   }
   &__logo {
     width: 130px;
@@ -92,9 +92,132 @@ a {
   &__sub {
     background-color: #F3983E;
   }
+  .headerBunner {
+    display: flex;
+    padding: 10px 5px;
+    &__img{
+      width: 20px;
+    }
+    &__text {
+      font-size: 16px;
+      color: #FFFF;
+      padding-left: 10px;
+    }
+  }
 
 }
 
+.container {
   .contant {
-    .main {}
+    .main {
+      .mainMenu {
+        &__recipe {
+          position: relative;
+        }
+        &__wrap {
+          display: flex;
+          color: #4c4a40;
+        }
+        &__list {
+            border-right: #ded5c0 1px solid;
+            width: 33%;
+            text-align: center;
+            margin: 5px;
+        }
+        .mainMenuContainer {
+          &__name {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .mainMenuInfo {
+        margin: 5px 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        &__label {
+          margin: 5px;
+          padding: 5px 0;
+          text-align: center;
+          background-color: #F3983E;
+          color: #FFFF;
+          width: 50px;
+          border-radius: 4px;
+          &--manth {
+            font-size: 8px;
+          }
+        }
+        &__title {
+          color: #FFFF;
+          font-weight: bold;
+          text-shadow: 1px 1px 1px #000;
+          flex-basis: 70%;
+        }
+        &__name {
+          flex-basis: 30%;
+          bottom: 3px;
+          position: absolute;
+          right: 0;
+          &--icon {
+            width: 20px;
+            border-radius: 4px;
+          }
+          p {
+            color: #FFFF;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px #000;
+            font-size: 8px;
+            display: inline;
+          }
+
+        }
+      }
+    }
   }
+  &__inner {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: #ded5c0 1px solid;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  .mainContent {
+    display: block;
+
+    &__title {
+      padding: 10px;
+      border-top: 6px solid #7d940a;
+      display: flex;
+    }
+  }
+
+  .underBorder {
+    border-bottom: #ded5c0 1px solid;
+  }
+  .title__recipe {
+    font-size: 16px;
+  }
+  .listLink {
+    text-align: right;
+    font-size: 12px;
+    padding: 5px;
+    font-weight: bold;
+    margin-left: auto;
+  }
+}
+
+.recommendedLists {
+  &__link {
+    display: flex;
+  }
+  &--img {
+    width: 50px;
+  }
+
+}
