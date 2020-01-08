@@ -99,18 +99,18 @@ a:hover {
   background-color: #F3983E;
 }
 
-.header .headerBunner {
+.headerBunner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 10px 5px;
 }
 
-.header .headerBunner__img {
+.headerBunner__img {
   width: 20px;
 }
 
-.header .headerBunner__text {
+.headerBunner__text {
   font-size: 16px;
   color: #FFFF;
   padding-left: 10px;
@@ -205,6 +205,7 @@ a:hover {
   border: #ded5c0 1px solid;
   border-radius: 4px;
   margin-top: 10px;
+  border-radius: 4px;
 }
 
 .container .mainContent {
@@ -214,6 +215,26 @@ a:hover {
 .container .mainContent__title {
   padding: 10px;
   border-top: 6px solid #7d940a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .mainContent__noColor {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .mainContent__bunner {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.container .mainContent__subtitle {
+  border-bottom: #ded5c0 1px solid;
+  background: #faf9f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,5 +264,185 @@ a:hover {
 
 .recommendedLists--img {
   width: 50px;
+}
+
+.mainCard__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainCard__container {
+  width: 50%;
+}
+
+.mainCard__title {
+  margin: 10px;
+  color: #401C08;
+  font-weight: bold;
+}
+
+.mainCard__premium {
+  text-align: center;
+  background-color: #FCE6CC;
+  color: #401C08;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.recipe {
+  border-left: 6px solid #7D9429;
+}
+
+.proRecipe {
+  border-left: 6px solid #4FB8B9;
+}
+
+.cookpadLive {
+  border-left: 6px solid #F3983E;
+}
+
+.event {
+  border-left: 6px solid #C38BAC;
+}
+
+.mainCardFree {
+  text-align: center;
+  color: #4C4A40;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.mainCardFree__registration {
+  font-size: 18px;
+}
+
+.mainCardFree__number {
+  font-size: 33px;
+}
+
+.mainCardFree__free {
+  color: #F3983E;
+}
+
+.recommendedLists__list {
+  margin: 0 5px;
+}
+
+.recommendedLists__link {
+  border-bottom: #ded5c0 1px solid;
+}
+
+.recommendedLists--img {
+  margin: 5px;
+}
+
+.recommendedLists--text {
+  margin: 20px 0 18px 5px;
+  color: #4C4A40;
+}
+
+.recommendedLists__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.adIcon {
+  margin: 5px 5px 2px 0;
+  width: 30px;
+  height: 18px;
+  padding-top: 1px;
+  background-color: #A27652;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.recommendedListsMain--img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.recommendedListsMain__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px 12px;
+}
+
+.recommendedListsMain__Wrap {
+  margin: 5px 10px;
+  color: #4C4A40;
+}
+
+.recommendedListsMain__Wrap--text {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.recommendedListsMore {
+  text-align: center;
+  margin: 10px 0;
+  border-top: #7D9429 1px;
+}
+
+.accessRank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px;
+  border-bottom: #ded5c0 1px solid;
+}
+
+.accessRank__list {
+  margin: 5px;
+}
+
+.accessRank__wrap {
+  border-bottom: #ded5c0 1px solid;
+}
+
+.accessRankWrap__Contents {
+  text-align: center;
+}
+
+.accessRankWrap__Contents--icon {
+  width: 30px;
+}
+
+.subTitle--text {
+  margin: 12px;
+  font-size: 12px;
+}
+
+.topicRecipeWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+.topicRecipeWrap__list {
+  margin: 10px;
+}
+
+.newsMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newsMainWrap {
+  position: relative;
+}
+
+.newsMainWrap__title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #ffffff;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
