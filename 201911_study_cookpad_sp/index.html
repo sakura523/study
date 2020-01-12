@@ -23,17 +23,19 @@
           </div>
           <div class="header__memberMenu">
             <ul class="memberList">
-              <li class="memberList_login">
+              <li class="memberList__wrap">
                 <a href="#">
-                  <div class="memberList_icon icon_login">
-                    <p class="memberList_icon_text">ログイン</p>
+                  <div class="memberList_icon">
+                    <i class="fas fa-sign-in-alt memberList__icon"></i>
+                    <p class="memberList__text">ログイン</p>
                   </div>
                 </a>
               </li>
-              <li class="memberList_menu">
+              <li class="memberList__wrap">
                 <a href="#">
-                  <div class="memberList_icon icon_menu">
-                    <p class="memberList_icon_text">メニュー</p>
+                  <div class="memberList_icon">
+                    <i class="fas fa-bars memberList__icon"></i>
+                    <p class="memberList__text">メニュー</p>
                   </div>
                 </a>
               </li>
@@ -45,7 +47,6 @@
             <form class="search__form">
               <input class="search__form--text" type="text" id="" placeholder="料理名、食材、目的">
               <button class="search__form--submit" type="submit">
-                <span>検索</span>
               </button>
             </form>
           </div>
@@ -79,6 +80,7 @@
         <a class="headerBunner" href="#">
           <img class="headerBunner__img" src="images/icon_ps_medium@2x.png" alt="プレミアムサービスアイコン">
           <p class="headerBunner__text">人気レシピ見放題！登録後7日間無料！</p>
+          <img class="whiteArrow" src="images/white_arrow_right.png" alt="もっとみるアイコン">
         </a>
       </div>
     </header>
@@ -100,18 +102,27 @@
           </div>
           <ul class="mainMenu__wrap">
             <li class="mainMenu__list">
-              <a href="#" class="mainMenuContainer">
-                <span class="mainMenuContainer__name">カテゴリ</span>
+              <a href="#">
+                <div class="mainMenuContainer">
+                  <i class="fas fa-utensils"></i>
+                  <span class="mainMenuContainer__name">カテゴリ</span>
+                </div>
               </a>
             </li>
             <li class="mainMenu__list">
-              <a href="#" class="mainMenuContainer">
-                <span class="mainMenuContainer__name">Myフォルダ</span>
+              <a href="#">
+                <div class="mainMenuContainer">
+                  <i class="fas fa-folder"></i>
+                  <span class="mainMenuContainer__name">Myフォルダ</span>
+                </div>
               </a>
             </li>
             <li class="mainMenu__list">
-              <a href="#" class="mainMenuContainer">
-                <span class="mainMenuContainer__name">最近見た<br>レシピ</span>
+              <a href="#">
+                <div class="mainMenuContainer">
+                  <i class="fas fa-clock"></i>
+                  <span class="mainMenuContainer__name">最近見た<br>レシピ</span>
+                </div>
               </a>
             </li>
           </ul>
@@ -119,10 +130,11 @@
     </div>
 
     <div class="container__inner mainContent">
-      <div class="mainContent__noColor underBorder">
+      <div class="mainContent__noColor viewAll underBorder">
         <h2 class="title__recipe">サービス一覧</h2>
         <a class="listLink" href="#">
-          <p>すべて表示</p>
+          <p class="listLink__text">すべて表示</p>
+          <img class="listLink__icon" src="images/list_arrow_right.png" alt="すべて表示">
         </a>
         </div>
       <div class="mainCard">
@@ -158,36 +170,45 @@
     <div class="container__inner mainContent">
       <div class="mainContent__title underBorder">
         <img class="headerBunner__img" src="images/icon_ps_medium@2x.png" alt="プレミアムサービスアイコン">
-        <h2 class="title__recipe">プレイアムサービス</h2>
+        <h2 class="title__recipe title__premium">プレミアムサービス</h2>
       </div>
       <div class="mainCard">
         <ul class="mainCard__wrap">
-          <li class="mainCard__container　recipe">
-            <a class="mainCard__title" href="#">
-              <p>レシピランキング</p>
+          <li class="mainCard__container">
+            <a class="premiumIcon" href="#">
+              <i class="fas fa-surprise"></i>
+              <p class="premium__title">レシピランキング</p>
             </a>
           </li>
-          <li class="mainCard__container　proRecipe">
-            <a class="mainCard__title" href="#">
-              <p>殿堂入りレシピ</p>
+          <li class="mainCard__container borderLeft">
+            <a class="premiumIcon" href="#">
+              <i class="fas fa-surprise"></i>
+              <p class="premium__title">レシピランキング</p>
             </a>
           </li>
-          <li class="mainCard__container　cookpadLive">
-            <a class="mainCard__title" href="#">
-              <p>専門家厳選レシピ</p>
+          <li class="mainCard__container">
+            <a class="premiumIcon" href="#">
+              <i class="fas fa-surprise"></i>
+              <p class="premium__title">レシピランキング</p>
             </a>
           </li>
-          <li class="mainCard__container　event">
-            <a class="mainCard__title" href="#">
-              <p>プレミアム献立</p>
+          <li class="mainCard__container borderLeft">
+            <a class="premiumIcon" href="#">
+              <i class="fas fa-surprise"></i>
+              <p class="premium__title">レシピランキング</p>
             </a>
           </li>
         </ul>
         <a class="mainCard__free" href="#">
-          <p class="mainCardFree">
-            <span class="mainCardFree__registration">登録後</span>
-            <span class="mainCardFree__number">7</span><span class="mainCardFree__day">日間</span><span class="mainCardFree__free">無料</span>
-          </p>
+          <div class="mainCardFree">
+            <p>
+              <span class="mainCardFree__registration">登録後</span>
+              <span class="mainCardFree__number">7</span><span class="mainCardFree__day">日間</span><span class="mainCardFree__free">無料</span>
+            </p>
+            <div class="mainCardFreeIcon">
+              <img class="mainCardFreeIcon__icon" src="images/list_arrow_right.png" alt="すべて表示">
+            </div>
+          </div>
           <p class="mainCard__premium" href="#">
             人気レシピが見放題!<br>
             プレミアムサービスはこちら!
@@ -201,74 +222,22 @@
         <span class="adIcon">広告</span>
         <h2 class="title__recipe">おすすめ特集</h2>
       </div>
-      <ul class="recommendedLists">
-        <li class="recommendedLists__list">
-          <a href="#" class="recommendedLists__link">
-            <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
-            <p class="recommendedLists--text">余った野菜で消費レシピ</p>
-          </a>
-        </li>
-        <li class="recommendedLists__list">
-          <a href="#" class="recommendedLists__link">
-            <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
-            <p class="recommendedLists--text">余った野菜で消費レシピ</p>
-          </a>
-        </li>
-        <li class="recommendedLists__list">
-          <a href="#" class="recommendedLists__link">
-            <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
-            <p class="recommendedLists--text">赤ちゃん喜ぶ♪離乳食レシピ</p>
-          </a>
-        </li>
-        <li class="recommendedLists__list">
-          <a href="#" class="recommendedLists__link">
-            <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
-            <p class="recommendedLists--text">忙しいときにも◎即できランチ</p>
-          </a>
-        </li>
-        <li class="recommendedLists__list">
-          <a href="#" class="recommendedLists__link">
-            <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
-            <p class="recommendedLists--text">赤ちゃん喜ぶ♪離乳食レシピ</p>
-          </a>
-        </li>
-        <li class="recommendedLists__list">
-          <a href="#" class="recommendedLists__link">
-            <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
-            <p class="recommendedLists--text">赤ちゃん喜ぶ♪離乳食レシピ</p>
-          </a>
-        </li>
-        <li class="recommendedLists__list">
-          <a href="#" class="recommendedLists__link">
-            <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
-            <p class="recommendedLists--text">赤ちゃん喜ぶ♪離乳食レシピ</p>
-          </a>
-        </li>
-        <li class="recommendedLists__list">
-          <a href="#" class="recommendedLists__link">
-            <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
-            <p class="recommendedLists--text">赤ちゃん喜ぶ♪離乳食レシピ</p>
-          </a>
-        </li>
-        <li class="recommendedLists__list">
-          <a href="#" class="recommendedLists__link">
-            <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
-            <p class="recommendedLists--text">赤ちゃん喜ぶ♪離乳食レシピ</p>
-          </a>
-        </li>
-        <li class="recommendedLists__list">
-          <a href="#" class="recommendedLists__link">
-            <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
-            <p class="recommendedLists--text">赤ちゃん喜ぶ♪離乳食レシピ</p>
-          </a>
-        </li>
-        <li class="recommendedLists__list">
-          <a href="#" class="recommendedLists__link">
-            <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
-            <p class="recommendedLists--text">赤ちゃん喜ぶ♪離乳食レシピ</p>
-          </a>
-        </li>
-      </ul>
+            <ul class="newsSub">
+              <li class="mainWrap__container">
+                <a class="mainCard__list" href="#">
+                  <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
+                  <p>お花畑みたいな”魅せ”サラダ</p>
+                  <img class="listLink__icon" src="images/list_arrow_right.png" alt="すべて表示">
+                </a>
+              </li>
+              <li class="mainWrap__container">
+                <a class="mainCard__list" href="#">
+                  <img class="recommendedLists--img" src="images/recipe_img.jpg" alt="レシピ画像">
+                  <p>やみつき美味！無限白菜レシピ</p>
+                  <img class="listLink__icon" src="images/list_arrow_right.png" alt="すべて表示">
+                </a>
+              </li>
+            </ul>
       <div class="recommendedListsMain">
         <a class="recommendedListsMain__link" href="#">
           <img class="recommendedListsMain--img" src="images/recipe_img.jpg" alt="レシピ画像">
@@ -297,44 +266,46 @@
         <div class="mainContent__subtitle">
           <a class="headerBunner" href="#">
             <img class="headerBunner__img" src="images/icon_ps_medium@2x.png" alt="プレミアムサービスアイコン">
-            <p class="headerBunner">デイリーアクセス数ランキング</p>
+            <p class="headerBunner__title">デイリーアクセス数ランキング</p>
           </a>
         </div>
-        <ul class="accessRank">
-          <li class="accessRank__list">
-            <a class="accessRankWrap" href="#">
-              <div class="accessRankWrap__Contents">
-                <img class="accessRankWrap__Contents--icon" src="images/ranking_1st.png" alt="1位アイコン">
-              </div>
-              <div>
-                <img class="recommendedListsMain--img" src="images/recipe_img.jpg" alt="レシピ画像">
-              </div>
-            </a>
-          </li>
-          <li class="accessRank__list">
-            <a class="accessRankWrap" href="#">
-              <div class="accessRankWrap__Contents">
-                <img class="accessRankWrap__Contents--icon" src="images/ranking_1st.png" alt="1位アイコン">
-              </div>
-              <div>
-                <img class="recommendedListsMain--img" src="images/recipe_img.jpg" alt="レシピ画像">
-              </div>
-            </a>
-          </li>
-          <li class="accessRank__list">
-            <a class="accessRankWrap" href="#">
-              <div class="accessRankWrap__Contents">
-                <img class="accessRankWrap__Contents--icon" src="images/ranking_1st.png" alt="1位アイコン">
-              </div>
-              <div>
-                <img class="recommendedListsMain--img" src="images/recipe_img.jpg" alt="レシピ画像">
-              </div>
-            </a>
-          </li>
-        </ul>
+        <div class="accessRank">
+          <ul class="accessRank__inner">
+            <li class="accessRank__list">
+              <a class="accessRankWrap" href="#">
+                <div class="accessRankWrap__Contents">
+                  <img class="accessRankWrap__Contents--icon" src="images/ranking_1st.png" alt="1位アイコン">
+                </div>
+                <div>
+                  <img class="accessRank__img" src="images/recipe_img.jpg" alt="レシピ画像">
+                </div>
+              </a>
+            </li>
+            <li class="accessRank__list">
+              <a class="accessRankWrap" href="#">
+                <div class="accessRankWrap__Contents">
+                  <img class="accessRankWrap__Contents--icon" src="images/ranking_1st.png" alt="1位アイコン">
+                </div>
+                <div>
+                  <img class="accessRank__img" src="images/recipe_img.jpg" alt="レシピ画像">
+                </div>
+              </a>
+            </li>
+            <li class="accessRank__list">
+              <a class="accessRankWrap" href="#">
+                <div class="accessRankWrap__Contents">
+                  <img class="accessRankWrap__Contents--icon" src="images/ranking_1st.png" alt="1位アイコン">
+                </div>
+                <div>
+                  <img class="accessRank__img" src="images/recipe_img.jpg" alt="レシピ画像">
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="recommendedListsMore">
           <a class="recommendedListsMore__link" href="#">
-            <p>みんなが見た人気のレシピ20品</p>
+            <p class="recommendedListsMore__title">みんなが見た人気のレシピ20品</p>
           </a>
         </div>
       </div>
@@ -342,29 +313,31 @@
         <div class="mainContent__subtitle">
           <p class="headerBunner">話題のレシピ</p><span class="subTitle--text">つくれぽ10人おめでとう！</span>
         </div>
-        <ul class="accessRank">
-          <li class="accessRank__list">
-            <a href="#">
-              <img class="recommendedListsMain--img" src="images/recipe_img.jpg" alt="レシピ画像">
-              <span class="topicRecipeWrap__list--recipiname">はちみつレモンカップケーキ</span>
-              <span class="topicRecipeWrap__list--name">byみか＊＊</span>
-            </a>
-          </li>
-          <li class="accessRank__list">
-            <a href="#">
-              <img class="recommendedListsMain--img" src="images/recipe_img.jpg" alt="レシピ画像">
-              <span class="topicRecipeWrap__list--recipiname">はちみつレモンカップケーキ</span>
-              <span class="topicRecipeWrap__list--name">byみか＊＊</span>
-            </a>
-          </li>
-          <li class="accessRank__list">
-            <a href="#">
-              <img class="recommendedListsMain--img" src="images/recipe_img.jpg" alt="レシピ画像">
-              <span class="topicRecipeWrap__list--recipiname">はちみつレモンカップケーキ</span>
-              <span class="topicRecipeWrap__list--name">byみか＊＊</span>
-            </a>
-          </li>
-        </ul>
+        <div class="accessRank">
+          <ul class="accessRank__inner">
+            <li class="accessRank__list">
+              <a href="#">
+                <img class="accessRank__img" src="images/recipe_img.jpg" alt="レシピ画像">
+                <span class="topicRecipeWrap__list--recipiname">はちみつレモンカップケーキ</span>
+                <span class="topicRecipeWrap__list--name">byみか＊＊</span>
+              </a>
+            </li>
+            <li class="accessRank__list">
+              <a href="#">
+                <img class="accessRank__img" src="images/recipe_img.jpg" alt="レシピ画像">
+                <span class="topicRecipeWrap__list--recipiname">はちみつレモンカップケーキ</span>
+                <span class="topicRecipeWrap__list--name">byみか＊＊</span>
+              </a>
+            </li>
+            <li class="accessRank__list">
+              <a href="#">
+                <img class="accessRank__img" src="images/recipe_img.jpg" alt="レシピ画像">
+                <span class="topicRecipeWrap__list--recipiname">はちみつレモンカップケーキ</span>
+                <span class="topicRecipeWrap__list--name">byみか＊＊</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="recommendedListsMore">
           <a class="recommendedListsMore__link">
             <p>もっと見る</p>
@@ -381,7 +354,7 @@
         <li class="newsMain__wrap">
           <a href="#">
             <div class="newsMainWrap">
-              <img class="recommendedListsMain--img" src="images/recipe_img.jpg" alt="レシピ画像">
+              <img class="accessRank__img" src="images/recipe_img.jpg" alt="レシピ画像">
               <span class="newsMainWrap__title">大豆イソフラボンって一体なに？</span>
             </div>
           </a>
@@ -389,29 +362,29 @@
         <li class="newsMain__wrap">
           <a href="#">
             <div class="newsMainWrap">
-              <img class="recommendedListsMain--img" src="images/recipe_img.jpg" alt="レシピ画像">
+              <img class="accessRank__img" src="images/recipe_img.jpg" alt="レシピ画像">
               <span class="newsMainWrap__title">大豆イソフラボンって一体なに？</span>
             </div>
           </a>
         </li>
       </ul>
       <ul class="newsSub">
-        <li class="mainCard__container　event">
-          <a class="mainCard__title" href="#">
-            <p>お花畑みたいな”魅せ”サラダ</p>
-            <img class="recommendedLists__link--img" src="images/x.png" alt="矢印アイコン">
+        <li class="mainWrap__container">
+          <a class="mainCard__list" href="#">
+            <p class="news__text">お花畑みたいな”魅せ”サラダ</p>
+            <img class="listLink__icon" src="images/list_arrow_right.png" alt="すべて表示">
           </a>
         </li>
-        <li class="mainCard__container　event">
-          <a class="mainCard__title" href="#">
-            <p>やみつき美味！無限白菜レシピ</p>
-            <img class="recommendedLists__link--img" src="images/x.png" alt="矢印アイコン">
+        <li class="mainWrap__container">
+          <a class="mainCard__list" href="#">
+            <p class="news__text">やみつき美味！無限白菜レシピ</p>
+            <img class="listLink__icon" src="images/list_arrow_right.png" alt="すべて表示">
           </a>
         </li>
-        <li class="mainCard__container　event">
-          <a class="mainCard__title" href="#">
-            <p>市販のキャラメルで簡単プリン</p>
-            <img class="recommendedLists__link--img" src="images/x.png" alt="矢印アイコン">
+        <li class="mainWrap__container">
+          <a class="mainCard__list" href="#">
+            <p class="news__text">市販のキャラメルで簡単プリン</p>
+            <img class="listLink__icon" src="images/list_arrow_right.png" alt="すべて表示">
           </a>
         </li>
       </ul>
@@ -427,28 +400,34 @@
         <h2 class="title__recipe">クックパッドのアプリ</h2>
       </div>
       <ul class="apply">
-        <li class="mainCard__container　event">
-          <a class="mainCard__title" href="#">
+        <li class="mainWrap__container">
+          <a class="mainCard__list" href="#">
             <img class="topicKitchenLists__list--icon" src="images/cookpad_app_ios.png" alt="話題のキッチンユーザーアイコン">
-            <p class="apply__title">アプリ版クックパッド</p>
-            <span class="applu__sub">スマホのホーム画面からすぐにレシピ検索</span>
-            <img class="recommendedLists__link--img" src="images/x.png" alt="矢印アイコン">
+            <div class="applyWrap">
+              <p class="applyWrap__title">アプリ版クックパッド</p>
+              <span class="applyWrap__sub">スマホのホーム画面からすぐにレシピ検索</span>
+            </div>
+            <img class="listLink__icon" src="images/list_arrow_right.png" alt="すべて表示">
           </a>
         </li>
-        <li class="mainCard__container　event">
-          <a class="mainCard__title" href="#">
+        <li class="mainWrap__container">
+          <a class="mainCard__list" href="#">
             <img class="topicKitchenLists__list--icon" src="images/cookpad_app_ios.png" alt="話題のキッチンユーザーアイコン">
-            <p class="apply__title">お料理アルバム</p>
-            <span class="applu__sub">プライベートな料理写真記録</span>
-            <img class="recommendedLists__link--img" src="images/x.png" alt="矢印アイコン">
+            <div class="applyWrap">
+              <p class="applyWrap__title">お料理アルバム</p>
+              <span class="applyWrap__sub">プライベートな料理写真記録</span>
+            </div>
+            <img class="listLink__icon" src="images/list_arrow_right.png" alt="すべて表示">
           </a>
         </li>
-        <li class="mainCard__container　event">
-          <a class="mainCard__title" href="#">
+        <li class="mainWrap__container">
+          <a class="mainCard__list" href="#">
             <img class="topicKitchenLists__list--icon" src="images/cookpad_app_ios.png" alt="話題のキッチンユーザーアイコン">
-            <p class="apply__title">coolpadLive</p>
-            <span class="applu__sub">料理化・有名人とLIVEで料理</span>
-            <img class="recommendedLists__link--img" src="images/x.png" alt="矢印アイコン">
+            <div class="applyWrap">
+              <p class="applyWrap__title">coolpadLive</p>
+              <span class="applyWrap__sub">料理化・有名人とLIVEで料理</span>
+            </div>
+            <img class="listLink__icon" src="images/list_arrow_right.png" alt="すべて表示">
           </a>
         </li>
       </ul>
@@ -459,14 +438,14 @@
       </div>
     </div>
 
-    <div class="sideber__content sideberMargin">
+    <div class="mainContent__bunner">
       <img class="sideber__bestRecipeImg--banner" src="images/side_bunner.png" alt="殿堂入りレシピバナー画像">
     </div>
 
       <footer class="footer">
         <div class="footer__inner">
           <p class="footer__text">なにかお気づきの点はありますか？</p>
-          <a class="button" href="#">クックパッドに意見を送る</a>
+          <a class="footer__opinion" href="#">クックパッドに意見を送る</a>
           <ul class="footerMenu">
             <li class="footerMenu__list">
               <a class="footerMenu__list--text" href="#">トップページ</a>
@@ -481,7 +460,7 @@
               <a class="footerMenu__list--text" href="#">ログイン</a>
             </li>
           </ul>
-          <a class="footer__text" href="#">機種変更をお考えの方へ</a>
+          <a class="footerMenu__text" href="#">機種変更をお考えの方へ</a>
           <ul class="guide">
             <li class="guide__list">
               <a class="guide__list--text" href="#">利用規約</a>
